@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+    <title>Cukrárna U Hanky</title>
+    <meta name="description" content="Cukrárna U Hanky v Jablonném v Podještědí nabízí dorty, zákusky, kávu a další speciality.">
+    <meta name="keywords" content="cukrárna, zákusky, dorty, Jablonné v Podještědí, káva">
+</head>
+<body>
+    <header> <!-- Přidat nav pro desktop --> <!-- VALIdátor -->
+        <nav class="nav">
+            <div class="nav__content">
+                <a href="./index.html" class="nav__logo"><img src="./images/Logo.svg" alt="Logo" width="141" height="52"></a>
+                <a href="javascript:void(0);" class="nav__hambrugermenu" onclick="toggleMenu()">
+                    <img class="hamburgemenu__hamburgericon" src="./images/icon_hamburger.png" alt="Hamburger menu">
+                    <img class="hamburgemenu__cancelicon" src="./images/icon_cancel.png" alt="Hamburger menu">
+                </a>
+            </div>
+        <div class="nav__container">
+            <img src="./images/nav_shape.png" class="nav__shape" alt="xx">
+            <menu class="nav__menu" id="myLinks">
+                <li class="nav__item"><a href="#hero">O nás</a></li>
+                <li class="nav__item"><a href="#contacts">Kontakty</a></li>
+            </menu>
+        </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        
+        <div class="hero__content">
+            
+            <div class="hero__title">
+                
+                <h1 class="hero__header">Zákusky, chlebíčky, dorty nebo skvělá káva?</h1>
+                
+                <div class="hero__desciption">
+                    <p class="hero__paragraph">To a mnoho dalšího přímo na váš stůl v <strong>Cukrárně U Hanky</strong> v Jablonném v Podještědí! Naše cukrárna se nachází přímo na malebném náměstí a je oblíbeným místem, kam si lidé přicházejí odpočinout a vychutnat si něco sladkého. Čeká vás nejen příjemné prostředí, ale i přátelská a usměvavá obsluha, která se postará o to, abyste se u nás cítili jako doma.</p>
+                    <p class="hero__paragraph"><strong>Cukrárna U Hanky</strong> má svou historii již od roku 2004. Od roku 2015 ji s láskou a pečlivostí vede současná majitelka, která se neustále snaží cukrárnu vylepšovat a plnit přání každého zákazníka.</p>
+                    <p class="hero__paragraph">Platbu u nás můžete pohodlně provést jak <strong>hotově</strong>, tak <strong>platební kartou</strong>.</p>
+                </div>
+            
+            </div>
+            
+            <a href="#offer" class="button button--hero">Více informací</a>
+        </div>
+
+        <div class="hero__image hero__image--mobile">
+            <img src="./images/heroimage-mobile.jpg" alt="Cukrárna U Hanky" class="heroimage-mobie">
+            <img src="./images/heroimage-desktop.jpg" alt="Cukrárna U Hanky" class="heroimage-desktop">
+        </div>
+    
+    </section>
+
+
+    <section class="offer" id="offer">
+        <h2 class="offer__title">Co nabízíme?</h2>
+        <div class="offer__items">
+            <div class="offer__item">
+                <img src="./images/icon_dorty.png" alt="Poctivé dorty" class="offer__icon">
+                <div class="offer__text">
+                    <h3 class="offer__subtitle">Poctivé dorty</h3>
+                    <p class="offer__description">Od klasiky po originální kombinace. Doufáme, že vás naše dorty mile překvapí.</p>
+                </div>
+            </div>
+            <div class="offer__item">
+                <img src="./images/icon_zakusky.png" alt="Poctivé dorty" class="offer__icon">
+                <div class="offer__text">
+                    <h3 class="offer__subtitle">Dezerty a zákusky</h3>
+                    <p class="offer__description">Naše dezerty vám nabídnou vše od klasických kousků po originální kombinace chutí.</p>
+                </div>
+            </div>
+            <div class="offer__item">
+                <img src="./images/icon_kava.png" alt="Poctivé dorty" class="offer__icon">
+                <div class="offer__text">
+                    <h3 class="offer__subtitle">Lahodná káva</h3>
+                    <p class="offer__description">Lahodná a pečlivě připravená káva připravená přesně tak, aby doplnila vaše oblíbené zákusky.</p>
+                </div>
+            </div>
+            <div class="offer__item">
+                <img src="./images/icon_slanepochoutky.png" alt="Poctivé dorty" class="offer__icon">
+                <div class="offer__text">
+                    <h3 class="offer__subtitle">Slané pochoutky</h3>
+                    <p class="offer__description">Výborné chlebíčky a další slané dobroty jako třeba pomazánky pro každou příležitost.</p>
+                </div>
+            </div>
+            <div class="offer__item">
+                <img src="./images/icon_lokalnivyrobky.png" alt="Poctivé dorty" class="offer__icon">
+                <div class="offer__text">
+                    <h3 class="offer__subtitle">Lokální speciality</h3>
+                    <p class="offer__description">Podpořte místní výrobce ochutnávkou lahodných domácích dortů a zákusků.</p>
+                </div>
+            </div>
+            <div class="offer__item">
+                <img src="./images/icon_dalsi.png" alt="Poctivé dorty" class="offer__icon">
+                <div class="offer__text">
+                    <h3 class="offer__subtitle">Objevte více</h3>
+                    <p class="offer__description">Naše nabídka skrývá mnohem více, než čekáte. Navštivte nás a přesvědčte se sami!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery__container">
+            <div class="gallery__item gallery__item--text">
+                <div class="gallery__text">
+                    <h3 class="gallery__title">Dorty na míru</h3>
+                    <p class="gallery__description">Objednejte si dort z naší nabídky nebo podle vlastního návrhu. Čerstvý dort připravíme během pár dnů, stačí nám napsat na Facebook nebo kontaktovat paní majitelku!</p>
+                    <div class="gallery__buttons">
+                        <a class="button button--gallery" href="#contacts">Kontaktovat</a>
+                        <a class="button button--gallery" href="./images/cakes_menu.pdf">Nabídka</a>  
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__item gallery__item--foto">
+                <img src="./images/gallery-image_custom-cake.jpg" alt="Dort k oslavě 70" class="gallery__image">
+            </div>
+            <div class="gallery__item gallery__item--foto">
+                <img src="./images/gallery-image_zakusky-kava.jpg" alt="zakusky s kavou k vydeji" class="gallery__image">
+            </div>
+            <div class="gallery__item gallery__item--foto">
+                <img src="./images/gallery-image_zakusek.jpg" alt="zakusek v interieru cukrárny" class="gallery__image">
+            </div>
+            <div class="gallery__item gallery__item--foto">
+                <img src="./images/gallery-image_chlebicky.jpg" alt="chlebicky" class="gallery__image">
+            </div>
+            <div class="gallery__item gallery__item--foto">
+                <img src="images/gallery-image_limonada.jpg" alt="limonada" class="gallery__image">
+            </div>
+            <div class="gallery__item gallery__item--foto">
+                <img src="#" alt="xxx" class="gallery__image">
+            </div>
+            <div class="gallery__item gallery__item--text">
+                <div class="gallery__text">
+                    <h3 class="gallery__title">Buďte u toho s námi!</h3>
+                    <p class="gallery__description">
+                        Sledujte nás na Facebooku a Instagramu, kde pravidelně sdílíme novinky, čerstvé dobroty, aktuální nabídky 
+                        a zajímavosti z naší cukrárny. Koukněte se sami!
+                    </p>
+                    <div class="gallery__socials">
+                        <a href="#" class="gallery__social-link">
+                            <img src="./images/icon_facebook.svg" alt="Facebook" class="gallery__social-icon">
+                        </a>
+                        <a href="#" class="gallery__social-link">
+                            <img src="./images/icon_instagram.svg" alt="Instagram" class="gallery__social-icon">
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+        <section class="contacts" id="contacts">
+                <h2 class="contacts__header">Kontakty</h2>
+                <div class="contacts__content">
+                    <div class="contacts__info">
+                        <div class="contacts__item">
+                            <p class="item__title">Hana Pešková</p>
+                            <div class="item__container"> 
+                                <img src="./images/icon_phone.svg" alt="mobile icon" class="item__description-icon item__description-icon--phone">
+                                <p class="item__description item__description--with-icon">+123 123 123</p>
+                            </div>
+                            <div class="item__container"> 
+                                <img src="./images/icon_email.svg" alt="email icon" class="item__description-icon item__description-icon--email">
+                                <p class="item__description item__description--with-icon">email.email@email.om</p>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <p class="item__title">Adresa</p>
+                            <p class="item__description">
+                                nám. Míru 17, 471 25 <span class="description__city">Jablonné v Podještědí</span>
+                            </p>                    </div>
+                        <div class="contacts__item">
+                            <p class="item__title">Otevírací doba</p>
+                            <p class="item__description">Pondělí - Sobota - 9:00 - 16:30</p>
+                            <p class="item__description">Neděle - 10:00 - 16:30</p>
+                        </div>
+                    </div>
+            
+                    <div class="contacts__socials">
+                        <p class="socials__description">Sledujte nás na sociálních sítích a získejte nejnovější informace!</p>
+                        <div class="socials__icons">
+                            <a href="#" class="social__icon">
+                                <img src="./images/icon_facebook.svg" alt="Facebook" class="icon__content">
+                            </a>
+                            <a href="#" class="social__icon">
+                                <img src="./images/icon_instagram.svg" alt="Instagram" class="icon__content">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.365755455269!2d14.753421076985872!3d50.76989235699564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47094585da166c5d%3A0x25eeb21106603104!2sCukr%C3%A1rna%20Hana%20Pe%C5%A1kov%C3%A1!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz" 
+                            width="300"  
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            class="mapframe"> 
+                        </iframe>  <!-- Přidat správnou mapku -->
+                    </div>
+                </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container">
+              <div class="footer__info">
+                <div class="footer__description">
+                    <div class="footer__address">
+                        <img class="foooter__adress-icon" alt="pointer icon" src="./images/icon_pointer.svg"> 
+                        <p class="footer__text footer__text--address">nám. Míru 17, 471 25 Jablonné v Podještědí</p>
+                    </div>
+                    <p class="footer__text footer__text--desktop"> &copy; 2024 Cukrárna U Hanky. Vytvořil Matyáš Korytar.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#hero" class="footer__link">O nás</a>
+                    <a href="#contacts" class="footer__link">Kontakty</a>
+                </div>
+                <div class="footer__socials">
+                    <a href="https://www.firmy.cz/detail/13522316-cukrarna-na-namesti-miru-17-jablonne-v-podjestedi.html" target="_blank" class="footer__partner-link">
+                      <img src="./images/icon_firmycz-footer.png" alt="Firmy.cz" class="footer__partner-logo">
+                    </a>
+                    <div class="footer__social">
+                      <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
+                        <img src="./images//icon_facebook-footer.svg" alt="Facebook" class="footer__social-icon">
+                      </a>
+                      <a href="https://www.instagram.com" target="_blank" class="footer__social-link">
+                        <img src="./images/icon_instagram-footer.svg" alt="Instagram" class="footer__social-icon">
+                      </a>
+                    </div>
+                </div>
+                <p class="footer__text footer__text--mobile"> &copy; 2024 Cukrárna U Hanky. Vytvořil Matyáš Korytar.</p>
+              </div>
+            </div>
+          </footer>
+
+    <script type="module" src="./scripts/cookieconsent-config.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
